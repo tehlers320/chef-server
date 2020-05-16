@@ -832,6 +832,9 @@ module Pedant
           add_chef_object(container, requestor, item)
           force_solr_commit
 
+          # TODO(ssd) 2020-05-16: DEBUG DEBUG DEBUG
+          sleep 5
+
           # Verify that it is now searchable
           r2 = direct_solr_query(index_name, "content:name__=__#{item_name}")
           num_after_add = get_response_count(r2)
