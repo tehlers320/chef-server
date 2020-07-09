@@ -130,12 +130,10 @@ include_recipe 'private-chef::fix_permissions'
   oc_bifrost
   oc_id
   elasticsearch
-  opscode-solr4
   opscode-expander
   bookshelf
   opscode-erchef
   nginx
-  rabbitmq
   bootstrap
   opscode-chef-mover
   redis_lb
