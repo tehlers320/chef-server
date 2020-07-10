@@ -145,6 +145,15 @@ component_runit_service 'opscode-solr4' do
   action :disable
 end
 
+component_runit_service 'rabbitmq' do
+  action :disable
+end
+
+directory '/opt/oopscode/sv/rabbitmq' do
+  recursive true
+  action :delete
+end
+
 directory '/opt/opscode/sv/opscode-solr4' do
   recursive true
   action :delete
