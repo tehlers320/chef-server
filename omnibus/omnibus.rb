@@ -24,3 +24,6 @@ fatal_transitive_dependency_licensing_warnings true
 # Build in FIPS compatability mode
 # ------------------------------
 fips_mode (ENV['OMNIBUS_FIPS_MODE'] || '').downcase == "true"
+use_git_caching true
+cache_dir '/cache/'
+git_cache_dir '/cache/'
